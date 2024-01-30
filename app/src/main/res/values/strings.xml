@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FogDistrictCatalog</string>
+    <string name="loadingText">Loading...</string>
+</resources>
