@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".View.HomePage">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:text="Product"
+        android:layout_marginTop="64dp"
+        style="@style/header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDevices"
+            style="@style/category_card">
+
+            <LinearLayout style="@style/category_layout">
+
+                <ImageView
+                    style="@style/category_icon"
+                    android:src="@drawable/devices" />
+
+                <TextView
+                    android:text="Devices"
+                    style="@style/category_font" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardTank"
+            style="@style/category_card">
+
+            <LinearLayout style="@style/category_layout">
+
+                <ImageView
+                    style="@style/category_icon"
+                    android:src="@drawable/tank" />
+
+                <TextView
+                    android:text="Tanks"
+                    style="@style/category_font" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardJuice"
+            style="@style/category_card">
+
+            <LinearLayout style="@style/category_layout">
+
+                <ImageView
+                    style="@style/category_icon"
+                    android:src="@drawable/vape_juice" />
+
+                <TextView
+                    android:text="Juice"
+                    style="@style/category_font" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardAcce"
+            style="@style/category_card">
+
+            <LinearLayout style="@style/category_layout">
+
+                <ImageView
+                    style="@style/category_icon"
+                    android:src="@drawable/accessories" />
+
+                <TextView
+                    android:text="Accessories"
+                    style="@style/category_font" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardMaintenance"
+            style="@style/category_card">
+
+            <LinearLayout style="@style/category_layout">
+
+                <ImageView
+                    style="@style/category_icon"
+                    android:src="@drawable/maintenance" />
+
+                <TextView
+                    android:text="Maintenance"
+                    style="@style/category_font" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardMerchandise"
+            style="@style/category_card">
+
+            <LinearLayout style="@style/category_layout">
+
+                <ImageView
+                    style="@style/category_icon"
+                    android:src="@drawable/merchandising" />
+
+                <TextView
+                    android:text="Merchandise"
+                    style="@style/category_font" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

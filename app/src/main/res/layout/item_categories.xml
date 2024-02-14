@@ -1,34 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    app:cardCornerRadius="10dp">
+    style="@style/category_card">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/darkGray"
-        android:orientation="vertical">
+        style="@style/category_layout">
 
         <ImageView
-            android:id="@+id/iv_categoryImage"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:id="@+id/iv_catImage"
             android:src="@drawable/ic_launcher_foreground"
-            android:background="@color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            style="@style/category_icon" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/loadingText"
-            android:textSize="18sp"
-            android:textColor="@color/white"
-            android:textStyle="bold"/>
+            android:id="@+id/tv_catName"
+            style="@style/category_font"/>
 
     </LinearLayout>
 

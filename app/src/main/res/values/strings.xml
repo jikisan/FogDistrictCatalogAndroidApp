@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">FogDistrictCatalog</string>
     <string name="loadingText">Loading...</string>
+    <string name="peso_sign">₱</string>
+    <string name="defaultPrice">₱0.00</string>
+
 </resources>

@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="category_card" parent="TextAppearance.AppCompat">
-        <item name="android:layout_width">wrap_content</item>
+    <style name="header" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_margin">16dp</item>
+        <item name="android:text">@string/loadingText</item>
+        <item name="android:textColor">?attr/primaryTextColor</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+<!--    CATEGORY STYLES-->
+    <style name="category_card" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_weight">1</item>
-        <item name="android:layout_gravity">center</item>
-        <item name="android:background">@color/darkGray</item>
+        <item name="android:layout_margin">16dp</item>
+        <item name="android:gravity">center</item>
         <item name="cardCornerRadius">10dp</item>
         <item name="cardElevation">30dp</item>
     </style>
@@ -15,23 +23,86 @@
     <style name="category_layout" parent="TextAppearance.AppCompat">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:background">@color/darkGray</item>
+        <item name="android:padding">32dp</item>
         <item name="android:gravity">center</item>
-        <item name="android:padding">16dp</item>
         <item name="android:orientation">vertical</item>
     </style>
 
     <style name="category_icon" parent="TextAppearance.AppCompat">
         <item name="android:layout_width">54dp</item>
         <item name="android:layout_height">54dp</item>
+        <item name="android:tint">?attr/primaryTextColor</item>
     </style>
 
     <style name="category_font" parent="TextAppearance.AppCompat">
-        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:text">@string/loadingText</item>
         <item name="android:textSize">12sp</item>
-        <item name="android:textColor">@color/white</item>
+        <item name="android:textColor">?attr/primaryTextColor</item>
         <item name="android:textStyle">bold</item>
+    </style>
+
+
+<!--    PRODUCT STYLES-->
+    <style name="product_card" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="cardCornerRadius">10dp</item>
+        <item name="cardElevation">30dp</item>
+    </style>
+
+    <style name="product_layout" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="product_image" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">200dp</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:tint">?attr/primaryTextColor</item>
+    </style>
+
+    <style name="product_font" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/loadingText</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">?attr/primaryTextColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="product_price_font" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/defaultPrice</item>
+        <item name="android:layout_marginStart">4dp</item>
+        <item name="android:layout_marginEnd">4dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/holo_red_dark</item>
+    </style>
+
+    <style name="product_quantity_font" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">4dp</item>
+        <item name="android:layout_marginEnd">4dp</item>
+        <item name="android:text">Quantity: 0</item>
+        <item name="android:textSize">8sp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:alpha">0.6</item>
+        <item name="android:layout_marginBottom">8dp</item>
     </style>
 
 </resources>

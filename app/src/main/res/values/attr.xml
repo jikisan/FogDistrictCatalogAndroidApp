@@ -1,0 +1,7 @@
+<!-- res/values/attrs.xml -->
+<resources>
+    <attr name="primaryTextColor" format="color"/>
+    <attr name="backgroundColor" format="color"/>
+    <attr name="primaryIconColor" format="color"/>
+    <!-- Define other attributes as needed -->
+</resources>
